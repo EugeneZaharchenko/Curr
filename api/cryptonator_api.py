@@ -9,6 +9,7 @@ class Api(_Api):
 
     def _update_rate(self, xrate):
         rate = self._get_api_rate(xrate.from_currency, xrate.to_currency)
+        print(rate)
         return rate
 
     def _get_api_rate(self, from_currency, to_currency):
